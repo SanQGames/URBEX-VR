@@ -1,0 +1,29 @@
+newmtl Concrete2
+map_Kd Con_Diffuse_1.jpg
+bump Con_Normal_1.jpg
+Kd 1 1 1
+d 1
+
+newmtl Concrete1
+map_Kd Con_Diffuse_1.jpg
+bump Con_Normal_1.jpg
+Kd 1 1 1
+d 1
+
+newmtl Default_Prototype
+map_Kd GridBox_Default.png
+Kd 1 1 1
+d 1
+
+newmtl Concrete3
+map_Kd Con_Diffuse_1.jpg
+bump Con_Normal_1.jpg
+Kd 0.8676471 0.8676471 0.8676471
+d 1
+
+newmtl Concrete4
+map_Kd Con_Diffuse_2.jpg
+bump Con_Normal_2.jpg
+Kd 1 1 1
+d 1
+

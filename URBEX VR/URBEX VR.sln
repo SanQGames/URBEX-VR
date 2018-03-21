@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URBEX VR", "Assembly-CSharp.csproj", "{33EB6B91-0976-9CCA-4199-79D6B7165368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "URBEX VR", "Assembly-CSharp-Editor.csproj", "{538C3845-E3FF-540E-B1FC-16FC81606778}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33EB6B91-0976-9CCA-4199-79D6B7165368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33EB6B91-0976-9CCA-4199-79D6B7165368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33EB6B91-0976-9CCA-4199-79D6B7165368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33EB6B91-0976-9CCA-4199-79D6B7165368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538C3845-E3FF-540E-B1FC-16FC81606778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538C3845-E3FF-540E-B1FC-16FC81606778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538C3845-E3FF-540E-B1FC-16FC81606778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538C3845-E3FF-540E-B1FC-16FC81606778}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

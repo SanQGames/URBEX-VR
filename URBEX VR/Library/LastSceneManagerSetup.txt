@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Scenes/duplicates/level1building.unity
+  isLoaded: 1
+  isActive: 1
