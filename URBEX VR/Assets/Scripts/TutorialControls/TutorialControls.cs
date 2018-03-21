@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TutorialControls : MonoBehaviour {
 
-	public OVRInput.Controller left, right;
+	public int HUB;
 
 	public float firstDelay = 7.0f;
 	public float secondDelay = 10.0f;
@@ -20,6 +21,7 @@ public class TutorialControls : MonoBehaviour {
 	public SpriteRenderer[] imagesRotate;
 	public SpriteRenderer controlsBase;
 	public SpriteRenderer urbexLogo;
+	public GameObject collectable;
 
 	public int mode = 0;
 
@@ -52,12 +54,14 @@ public class TutorialControls : MonoBehaviour {
 				foreach (SpriteRenderer rend in imagesGrab) {
 					rend.gameObject.SetActive (true);
 				}
+				collectable.SetActive (true);
 				if (countdown < 0) {
 					mode++;
 					countdown = secondDelay;
 					foreach (SpriteRenderer rend in imagesGrab) {
 						rend.gameObject.SetActive (false);
 					}
+					collectable.SetActive (false);
 				}
 				break;
 			case 1:
@@ -82,6 +86,7 @@ public class TutorialControls : MonoBehaviour {
 					foreach (SpriteRenderer rend in imagesRotate) {
 						rend.gameObject.SetActive (false);
 					}
+					SceneManager.LoadScene (HUB);
 				}
 				break;
 			}
