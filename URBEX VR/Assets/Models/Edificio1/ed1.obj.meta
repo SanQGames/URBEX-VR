@@ -42,7 +42,27 @@ ModelImporter:
     6400004: Level_2
     6400006: Level_3
     6400008: Level_4
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete1
+    second: {fileID: 2100000, guid: bf718e34e45f3df479d1b72364fe901e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete2
+    second: {fileID: 2100000, guid: 169c9411e0de2a741beb04a37d2dfa16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete3
+    second: {fileID: 2100000, guid: d8d9468a3bed9b246a9406bebd32d8c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete4
+    second: {fileID: 2100000, guid: 43f49ede23f19af46ab15617826b0110, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
