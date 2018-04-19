@@ -9,7 +9,7 @@ public class FadeWhenPicked : MonoBehaviour {
 	public OVRInput.Controller lController;
 	public OVRInput.Controller rController;
 	bool once;
-	
+	FinishedLevelManager finManager;
 	void Start () {
 		once = true;
 	}
@@ -25,7 +25,8 @@ public class FadeWhenPicked : MonoBehaviour {
 				once = false;
 				FadeManager.StartFadeOut ();
 			}
+			finManager.GetComponent<FinishedLevelManager> ().SetPrefabs ();
 		}
-
+			
 	}
 }
