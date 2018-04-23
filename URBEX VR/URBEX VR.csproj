@@ -377,6 +377,7 @@
     <Compile Include="Assets\Scripts\ExitDoor.cs" />
     <Compile Include="Assets\Scripts\FadeScripts\ChangeScene\FadeScript.cs" />
     <Compile Include="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs" />
+    <Compile Include="Assets\Scripts\FadeScripts\ChangeScene\FinishedLevelManager.cs" />
     <Compile Include="Assets\Scripts\FadeScripts\Teleport\FadeScriptTp.cs" />
     <Compile Include="Assets\Scripts\FadeScripts\Teleport\FadeWhenPickedTp.cs" />
     <Compile Include="Assets\Scripts\PickUpsScript\BoolPrefs.cs" />
