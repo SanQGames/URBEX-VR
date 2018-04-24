@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 4044594105330112}
   - component: {fileID: 33555197070848310}
   - component: {fileID: 23670047499706008}
+  - component: {fileID: 65981567749771402}
   m_Layer: 0
   m_Name: Mesa
   m_TagString: Untagged
@@ -81,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1255064664538000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.9948225, y: 31.463, z: -8.591}
+  m_LocalPosition: {x: 41.691, y: 30.053, z: 29.428238}
   m_LocalScale: {x: 1, y: 1, z: 1.3920915}
   m_Children:
   - {fileID: 4044594105330112}
@@ -184,6 +185,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975218083987534}
   m_Mesh: {fileID: 4300002, guid: 0fc33b2d881833e46a3af635ce2086e1, type: 3}
+--- !u!65 &65981567749771402
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975218083987534}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4120841, y: 2, z: 0.95364004}
+  m_Center: {x: 0, y: 0.000000015358927, z: -0.45743677}
 --- !u!95 &95913567361608658
 Animator:
   serializedVersion: 3

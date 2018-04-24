@@ -5,11 +5,11 @@
       <File FileName="Assets\Scripts\TutorialControls\TutorialControls.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controlador\GrabManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ExitDoor.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeScript.cs" Line="11" Column="23" />
-      <File FileName="Assets\ResetSceneOnFall.cs" Line="11" Column="40" />
-      <File FileName="Assets\Scripts\PickUpsScript\PickUpManager.cs" Line="12" Column="21" />
-      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs" Line="32" Column="2" />
-      <File FileName="Assets\Scripts\PickUpsScript\HUBFeedback.cs" Line="11" Column="3" />
+      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\ResetSceneOnFall.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PickUpsScript\PickUpManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs" Line="12" Column="9" />
+      <File FileName="Assets\Scripts\PickUpsScript\HUBFeedback.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PickUpsScript\PickCollectable.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FinishedLevelManager.cs" Line="19" Column="9" />
     </Files>
