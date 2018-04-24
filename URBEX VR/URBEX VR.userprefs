@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PickUpsScript\HUBFeedback.cs">
     <Files>
       <File FileName="Assets\Scripts\TutorialControls\TutorialControls.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Controlador\GrabManager.cs" Line="1" Column="1" />
@@ -8,10 +8,10 @@
       <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeScript.cs" Line="1" Column="1" />
       <File FileName="Assets\ResetSceneOnFall.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PickUpsScript\PickUpManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs" Line="12" Column="9" />
-      <File FileName="Assets\Scripts\PickUpsScript\HUBFeedback.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FadeWhenPicked.cs" Line="29" Column="22" />
+      <File FileName="Assets\Scripts\PickUpsScript\HUBFeedback.cs" Line="41" Column="14" />
       <File FileName="Assets\Scripts\PickUpsScript\PickCollectable.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FinishedLevelManager.cs" Line="19" Column="9" />
+      <File FileName="Assets\Scripts\FadeScripts\ChangeScene\FinishedLevelManager.cs" Line="28" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
