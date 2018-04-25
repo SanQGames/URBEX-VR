@@ -39,7 +39,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1701348279188064}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 1.931, y: 42.637, z: -8.976305}
+  m_LocalPosition: {x: 47.947, y: 55.461, z: 20.362}
   m_LocalScale: {x: 0.2530643, y: 0.24629532, z: 0.2703273}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,6 +113,7 @@ MonoBehaviour:
   lController: 1
   rController: 2
   finManager: {fileID: 114220544051565310}
+  levelFinished: 1
 --- !u!114 &114220544051565310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,8 +125,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdeb2f335880c494088dadab76d00790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 1
-  timeToBeat: 50
+  level: 2
+  timeToBeat: 150
 --- !u!114 &114547411131915342
 MonoBehaviour:
   m_ObjectHideFlags: 1
