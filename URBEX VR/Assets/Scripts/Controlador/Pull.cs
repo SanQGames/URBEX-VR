@@ -21,7 +21,7 @@ public class Pull : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col) {
-		Debug.Log ("TRIGGER ENTER");
+		//Debug.Log ("TRIGGER ENTER");
 		if (col.gameObject.tag == grabbableTag) {
 			canGrip = true;
 		}

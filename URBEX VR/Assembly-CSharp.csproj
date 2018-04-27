@@ -110,6 +110,7 @@
      <Compile Include="Assets\Scripts\Controlador\CharacterControls.cs" />
      <Compile Include="Assets\Scripts\Controlador\Grab.cs" />
      <Compile Include="Assets\Scripts\Controlador\GrabManager.cs" />
+     <Compile Include="Assets\Scripts\Controlador\OculusHaptics.cs" />
      <Compile Include="Assets\Scripts\Controlador\OldPull.cs" />
      <Compile Include="Assets\Scripts\Controlador\Pull.cs" />
      <Compile Include="Assets\Scripts\Controlador\TouchController.cs" />
@@ -124,6 +125,7 @@
      <Compile Include="Assets\Scripts\PickUpsScript\PickCollectable.cs" />
      <Compile Include="Assets\Scripts\PickUpsScript\PickUpManager.cs" />
      <Compile Include="Assets\Scripts\TutorialControls\TutorialControls.cs" />
+     <Compile Include="Assets\Scripts\Wind.cs" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
      <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
@@ -134,6 +136,7 @@
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_FaceHighlight.shader" />
      <None Include="Assets\OVR\Shaders\OVRColorRampAlpha.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitSolidColor.shader" />
+     <None Include="Assets\Shaders\TransparentCubeMap.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_ReferenceUnlit.shader" />
      <None Include="Assets\OVR\Resources\Cubemap Blit.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseTextureBlend.shader" />
@@ -148,6 +151,7 @@
      <None Include="Assets\OVR\Resources\OVRMRCameraFrameLit.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_UnlitVertexColor.shader" />
      <None Include="Assets\ProCore\ProBuilder\Shader\pb_FacePicker.shader" />
+     <None Include="Assets\Shaders\Surface.shader" />
      <None Include="Assets\OVR\Resources\Underlay Transparent Occluder.shader" />
      <None Include="Assets\OVR\Resources\Texture2D Blit.shader" />
      <None Include="Assets\ProCore\ProBuilder\About\Font\SIL Open Font License.txt" />
