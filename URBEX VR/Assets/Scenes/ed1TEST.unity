@@ -3538,6 +3538,9 @@ MonoBehaviour:
   rController: 2
   leftControllerObj: {fileID: 1204332008}
   rightControllerObj: {fileID: 830201591}
+  leftVibration: {fileID: 0}
+  rightVibration: {fileID: 0}
+  timeToStop: 1
 --- !u!54 &704675089
 Rigidbody:
   m_ObjectHideFlags: 0

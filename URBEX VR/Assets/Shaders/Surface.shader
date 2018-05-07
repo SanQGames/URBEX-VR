@@ -8,9 +8,10 @@ Shader "Smkgames/SimpleSurface" {
 		_Glossiness("Smoothness", Float) = 0.5
 		_Metallic("Metallic", Float) = 0.75
 		_MetallicMap("MetallicMap",2D) = "white"{}
+		_Cutout("Cutout", Range(0.0, 1.0)) = 1.0
 	}
 		SubShader{
-		Tags{ "RenderType" = "Opaque" }
+		Tags{ "RenderType" = "Fade" }
 		LOD 200
 
 		CGPROGRAM
@@ -26,6 +27,7 @@ Shader "Smkgames/SimpleSurface" {
 
 	half _Glossiness,_Metallic;
 	fixed4 _Color;
+	float _Cutout;
 	sampler2D _GlossMap,_MetallicMap;
 
 	UNITY_INSTANCING_BUFFER_START(Props)
@@ -37,6 +39,8 @@ Shader "Smkgames/SimpleSurface" {
 		o.Metallic = _Metallic * tex2D(_MetallicMap,IN.uv_MainTex);
 		o.Smoothness = _Glossiness * tex2D(_GlossMap,IN.uv_MainTex);
 		o.Alpha = c.a;
+		if (c.a < _Cutout)
+			clip(-1);
 	}
 	ENDCG
 	}

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
-
     public GameObject minHeight;
     public GameObject maxHeight;
     public AudioSource windAudio;
@@ -12,16 +11,18 @@ public class Wind : MonoBehaviour
     public float minAudio;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start() {
         maxAudio = 1;
         minAudio = 0;
-
+        CheckPos();
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    void Update() {
+        CheckPos();
+    }
+
+    void CheckPos() {
         if (transform.position.y >= maxHeight.transform.position.y) {
             windAudio.volume = 1;
         }

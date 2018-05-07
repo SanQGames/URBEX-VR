@@ -371,6 +371,7 @@
     <Compile Include="Assets\Scripts\Controlador\CharacterControls.cs" />
     <Compile Include="Assets\Scripts\Controlador\Grab.cs" />
     <Compile Include="Assets\Scripts\Controlador\GrabManager.cs" />
+    <Compile Include="Assets\Scripts\Controlador\OculusHaptics.cs" />
     <Compile Include="Assets\Scripts\Controlador\OldPull.cs" />
     <Compile Include="Assets\Scripts\Controlador\Pull.cs" />
     <Compile Include="Assets\Scripts\Controlador\TouchController.cs" />
