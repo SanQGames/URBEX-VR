@@ -22,6 +22,26 @@ public class HUBFeedback : MonoBehaviour {
 		bool l2c2 = BoolPrefs.GetBool ("l2c2");
 		bool l2c3 = BoolPrefs.GetBool ("l2c3");
 
+
+		if (l1 == 0) {
+			l1 = 1;
+			PlayerPrefs.SetInt ("l1", 1);
+			l2 = 0;
+			PlayerPrefs.SetInt ("l2", 0);
+			l1c1 = false;
+			BoolPrefs.SetBool ("l1c1", false);
+			l1c2 = false;
+			BoolPrefs.SetBool ("l1c2", false);
+			l1c3 = false;
+			BoolPrefs.SetBool ("l1c3", false);
+			l2c1 = false;
+			BoolPrefs.SetBool ("l2c1", false);
+			l2c2 = false;
+			BoolPrefs.SetBool ("l2c2", false);
+			l2c3 = false;
+			BoolPrefs.SetBool ("l2c3", false);
+		}
+
 		if (!l1c1){
 			level1Cols [0].SetActive (false);
 		}

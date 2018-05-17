@@ -27,5 +27,12 @@ public class FinishedLevelManager : MonoBehaviour {
 			counter++;
 
 		PlayerPrefs.SetInt(levelString, counter);
+
+		//activar l2
+		int checkl2 = PlayerPrefs.GetInt ("l2");
+		if (level == 1 && checkl2 == 0) {
+			PlayerPrefs.SetInt ("l2", 1);
+		}
+
 	}
 }

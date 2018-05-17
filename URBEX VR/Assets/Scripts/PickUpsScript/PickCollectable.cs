@@ -11,6 +11,10 @@ public class PickCollectable : MonoBehaviour {
 	public PickUpManager manager;
 	bool once;
 	public bool detectable = true;
+
+	[Header("Feedback Sound")]
+	public AudioSource audio;
+
 	void Start () {
 		once = true;
 	}
@@ -25,6 +29,7 @@ public class PickCollectable : MonoBehaviour {
 
 			if ( (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0 || OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) && once ) {
 				once = false;
+				audio.Play ();
 				ObjectPicked ();
 			}
 		}
