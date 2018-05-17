@@ -389,6 +389,8 @@
     <Compile Include="Assets\Scripts\Wind.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Materials\Skyboxes\hip_miramar\README.TXT" />
+    <None Include="Assets\Materials\Skyboxes\hip_miramar\hip_miramar.shader" />
     <None Include="Assets\OVR\Editor\AndroidManifest.OVRSubmission.xml" />
     <None Include="Assets\OVR\Plugins\placeholder.txt" />
     <None Include="Assets\OVR\Resources\Cubemap Blit.shader" />
