@@ -1,0 +1,30 @@
+newmtl Stone
+map_Kd whitestone.jpg
+Kd 1 1 1
+d 1
+
+newmtl Bricks
+map_Kd brick.jpg
+Kd 1 0.978933 0.9529087
+d 1
+
+newmtl Entrance
+map_Kd parkingdoor.png
+Kd 1 1 1
+d 1
+
+newmtl Door
+map_Kd door.jpg
+Kd 1 1 1
+d 1
+
+newmtl gravel
+map_Kd gravel.jpg
+Kd 1 1 1
+d 1
+
+newmtl Window
+map_Kd blinds.jpg
+Kd 1 1 1
+d 1
+

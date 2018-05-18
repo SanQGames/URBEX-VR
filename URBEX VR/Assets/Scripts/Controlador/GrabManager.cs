@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /*
 private float RotationScaleMultiplier = 1.0f;
 public float RotationAmount = 1.5f;
@@ -28,11 +29,21 @@ public class GrabManager : MonoBehaviour {
 	//public OVRPlayerController playerController;
 	//public float rotationAmountY = 0.0f;
 
+	[Header("VIBRATION")]
+	public OculusHaptics leftVibration;
+	public OculusHaptics rightVibration;
+	public float timeToStop = 1.0f;
+	private float actualTimeL = 0.0f;
+	private float actualTimeR = 0.0f;
+
 	private float prevRightControllerValue;
 	private float prevLeftControllerValue;
 
 	private bool leftGripping;
 	private bool rightGripping;
+
+	private float timeToTpHub = 3.0f;
+	private bool waitingToHub = false;
 
 	void Start() {
 		prevRightControllerValue = OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController);
@@ -44,6 +55,20 @@ public class GrabManager : MonoBehaviour {
 
 	void Update() {
 		//rotationAmountY = playerController.currentRotationAmount;
+		if(OVRInput.Get(OVRInput.Button.One) || OVRInput.Get(OVRInput.Button.Two) || OVRInput.Get(OVRInput.Button.Three) || OVRInput.Get(OVRInput.Button.Four)) {
+			timeToTpHub -= Time.deltaTime;
+			leftVibration.Vibrate (VibrationForce.Hard);
+			rightVibration.Vibrate (VibrationForce.Hard);
+			waitingToHub = true;
+			if (timeToTpHub <= 0.0f) {
+				SceneManager.LoadScene (1);
+			}
+		} else if(!OVRInput.Get(OVRInput.Button.One) && !OVRInput.Get(OVRInput.Button.Two) && !OVRInput.Get(OVRInput.Button.Three) && !OVRInput.Get(OVRInput.Button.Four) && waitingToHub) {
+			timeToTpHub = 3.0f;
+			waitingToHub = false;
+			leftVibration.StopVibrate ();
+			rightVibration.StopVibrate ();
+		}
 	}
 
 	void FixedUpdate () {
@@ -53,6 +78,16 @@ public class GrabManager : MonoBehaviour {
 		if (isGripped) {
 			if (left.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0) {
 				leftGripping = true;
+				actualTimeR = 0.0f;
+				//VIBRATION:
+				//haptics.Vibrate(VibrationForce.Hard, 0);
+				if (actualTimeL <= timeToStop) {
+					actualTimeL += Time.deltaTime;
+					leftVibration.Vibrate (VibrationForce.Hard);
+				} else {
+					leftVibration.StopVibrate ();
+				}
+
 				//Debug.Log ("PULL");
 				//body.useGravity = false;
 				//charController.attachedRigidbody.useGravity = false;
@@ -67,6 +102,11 @@ public class GrabManager : MonoBehaviour {
 
 			} else if(left.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) == 0 && prevLeftControllerValue > 0) ) {
 				leftGripping = false;
+
+				//VIBRATION:
+				//haptics.Vibrate(VibrationForce.Light, 0);
+				actualTimeL = 0.0f;
+
 				//body.useGravity = true;
 				//charController.attachedRigidbody.useGravity = true;
 				charController.enabled = true;
@@ -78,6 +118,18 @@ public class GrabManager : MonoBehaviour {
 
 			if (right.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) {
 				rightGripping = true;
+
+				//VIBRATION:
+				//haptics.Vibrate(VibrationForce.Hard, 1);
+				if (actualTimeR <= timeToStop) {
+					actualTimeR += Time.deltaTime;
+					rightVibration.Vibrate(VibrationForce.Hard);
+				} else {
+					rightVibration.StopVibrate ();
+				}
+
+
+
 				//Debug.Log ("PULL");
 				//body.useGravity = false;
 				//charController.attachedRigidbody.useGravity = false;
@@ -92,6 +144,11 @@ public class GrabManager : MonoBehaviour {
 
 			} else if(!leftGripping && right.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) == 0 && prevRightControllerValue > 0)) {
 				rightGripping = false;
+
+				//VIBRATION:
+				//haptics.Vibrate(VibrationForce.Light, 1);
+				actualTimeR = 0.0f;
+
 				//body.useGravity = true;
 				//charController.attachedRigidbody.useGravity = true;
 				charController.enabled = true;

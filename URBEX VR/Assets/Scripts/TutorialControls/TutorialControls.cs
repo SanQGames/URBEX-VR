@@ -32,6 +32,17 @@ public class TutorialControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (Input.GetKeyDown (KeyCode.R)) {
+			PlayerPrefs.SetInt ("l1", 1);
+			PlayerPrefs.SetInt ("l2", 0);
+			BoolPrefs.SetBool ("l1c1", false);
+			BoolPrefs.SetBool ("l1c2", false);
+			BoolPrefs.SetBool ("l1c3", false);
+			BoolPrefs.SetBool ("l2c1", false);
+			BoolPrefs.SetBool ("l2c2", false);
+			BoolPrefs.SetBool ("l2c3", false);
+		}
+
 		countdown -= Time.deltaTime;
 		//FIRST WE FADE OUT THE LOGO
 		if (countdown < 0 && !fadedOut) {

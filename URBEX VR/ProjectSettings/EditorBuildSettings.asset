@@ -11,9 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/duplicates/hub 1.unity
     guid: f85ae78ff55d6c64aaf17a055ddab225
-  - enabled: 0
-    path: Assets/Scenes/duplicates/building2.unity
-    guid: 7ca73e725caaa7d49bf3e5de9df4b308
   - enabled: 1
-    path: Assets/Scenes/duplicates/level1building.unity
-    guid: ef3c00e866d97364fb5b2964bc0ffc73
+    path: Assets/Scenes/Levels/Level1.unity
+    guid: cb6f5a9f93f53bb4182bd024c96df53e
+  - enabled: 1
+    path: Assets/Scenes/Levels/Level2.unity
+    guid: cd35b23389cede5458ba98414a26ca6f

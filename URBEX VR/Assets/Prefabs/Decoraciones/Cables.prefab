@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33444777499170880}
   - component: {fileID: 23864794118962542}
   - component: {fileID: 95475541326723518}
+  - component: {fileID: 64271896856227638}
   m_Layer: 0
   m_Name: Cables
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817412822346800}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 9.031304, y: 30.997, z: -6.698}
+  m_LocalPosition: {x: 36.95, y: 33.189, z: 35.30503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,6 +83,20 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817412822346800}
+  m_Mesh: {fileID: 4300000, guid: d8d95c0d1433a4f42a4b21a7941d2bd0, type: 3}
+--- !u!64 &64271896856227638
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817412822346800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: d8d95c0d1433a4f42a4b21a7941d2bd0, type: 3}
 --- !u!95 &95475541326723518
 Animator:

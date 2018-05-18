@@ -34,11 +34,15 @@ public class PickUpManager : MonoBehaviour {
 			SetPickup (1, true);
 			SetPickup (2, true);
 			SetPickup (3, true);
+			PlayerPrefs.SetInt ("l1", 4);
+			PlayerPrefs.SetInt ("l2", 4);
 		}
 		if (Input.GetKeyDown ("r")) {
 			SetPickup (1, false);
 			SetPickup (2, false);
 			SetPickup (3, false);
+			PlayerPrefs.SetInt ("l1", 1);
+			PlayerPrefs.SetInt ("l2", 0);
 		}
 	}
 	public void SetPickup(int number, bool value){
