@@ -11,17 +11,23 @@ public class PickCollectable : MonoBehaviour {
 	public PickUpManager manager;
 	bool once;
 	public bool detectable = true;
+	public bool tutoCollictable = false;
 
 	[Header("Feedback Sound")]
 	public AudioSource audio;
 
 	void Start () {
+		if (playerprefNumber > 0)
+			tutoCollictable = false;
+		else
+			tutoCollictable = true;
+			 
 		once = true;
 	}
 
 	// Update is called once per frame
 	void Update () {
-		if (playerprefNumber == 1 && Input.GetKeyDown ("y"))
+		if (playerprefNumber == 1 && Input.GetKeyDown ("y") && !tutoCollictable)
 			ObjectPicked ();
 	}
 	void OnTriggerStay(Collider col) {
@@ -36,7 +42,7 @@ public class PickCollectable : MonoBehaviour {
 	}
 	void ObjectPicked(){
 		detectable = false;
-		manager.SetPickup (playerprefNumber, true);
+		if (!tutoCollictable) manager.SetPickup (playerprefNumber, true);
 		HideObject ();
 	}
 	public void ShowObject(){
