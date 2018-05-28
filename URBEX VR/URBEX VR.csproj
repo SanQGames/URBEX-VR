@@ -386,6 +386,7 @@
     <Compile Include="Assets\Scripts\PickUpsScript\HUBFeedback.cs" />
     <Compile Include="Assets\Scripts\PickUpsScript\PickCollectable.cs" />
     <Compile Include="Assets\Scripts\PickUpsScript\PickUpManager.cs" />
+    <Compile Include="Assets\Scripts\Spinner.cs" />
     <Compile Include="Assets\Scripts\TutorialControls\TutorialControls.cs" />
     <Compile Include="Assets\Scripts\Wind.cs" />
   </ItemGroup>
