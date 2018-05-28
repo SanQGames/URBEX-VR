@@ -20,12 +20,13 @@ public class FinishedLevelManager : MonoBehaviour {
 		int counter = 2; //already sets to bronze
 		string levelString = "l" + level.ToString();
 		//analyze if all collectibles are picked
-		if (BoolPrefs.GetBool(levelString + "c1") && BoolPrefs.GetBool(levelString + "c2") && BoolPrefs.GetBool(levelString + "c3"))
-			counter++;
+		if (level > 0) {
+			if (BoolPrefs.GetBool (levelString + "c1") && BoolPrefs.GetBool (levelString + "c2") && BoolPrefs.GetBool (levelString + "c3"))
+				counter++;
 		
-		if (timer < timeToBeat)
-			counter++;
-
+			if (timer < timeToBeat)
+				counter++;
+		}
 		PlayerPrefs.SetInt(levelString, counter);
 
 		//activar l2

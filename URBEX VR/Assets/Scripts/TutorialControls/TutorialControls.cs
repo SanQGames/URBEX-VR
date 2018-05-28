@@ -28,6 +28,8 @@ public class TutorialControls : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		countdown = firstDelay;
+		if (PlayerPrefs.GetInt ("l0") == 0)
+			HUB = 4;
 	}
 	
 	// Update is called once per frame
