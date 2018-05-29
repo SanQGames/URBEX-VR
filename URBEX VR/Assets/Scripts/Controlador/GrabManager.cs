@@ -29,6 +29,15 @@ public class GrabManager : MonoBehaviour {
 	//public OVRPlayerController playerController;
 	//public float rotationAmountY = 0.0f;
 
+	[Header("HAND ANIMATION")]
+	public GameObject rightHandClosed;
+	public GameObject rightHandOpened;
+	public GameObject leftHandClosed;
+	public GameObject leftHandOpened;
+
+	private bool firstAnimationLeftTime = true;
+	private bool firstAnimationRightTime = true;
+
 	[Header("VIBRATION")]
 	public OculusHaptics leftVibration;
 	public OculusHaptics rightVibration;
@@ -46,6 +55,10 @@ public class GrabManager : MonoBehaviour {
 	private bool waitingToHub = false;
 
 	void Start() {
+		rightHandOpened.SetActive (true);
+		leftHandOpened.SetActive (true);
+		rightHandClosed.SetActive (false);
+		leftHandClosed.SetActive (false);
 		prevRightControllerValue = OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController);
 		prevLeftControllerValue = OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController);
 		leftGripping = false;
@@ -78,6 +91,15 @@ public class GrabManager : MonoBehaviour {
 		if (isGripped) {
 			if (left.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0) {
 				leftGripping = true;
+
+				if (firstAnimationLeftTime) {
+					firstAnimationLeftTime = false;
+					//rightHandOpened.SetActive (true);
+					leftHandOpened.SetActive (false);
+					//rightHandClosed.SetActive (false);
+					leftHandClosed.SetActive (false);
+				}
+
 				actualTimeR = 0.0f;
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Hard, 0);
@@ -102,7 +124,7 @@ public class GrabManager : MonoBehaviour {
 
 			} else if(left.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) == 0 && prevLeftControllerValue > 0) ) {
 				leftGripping = false;
-
+				firstAnimationLeftTime = true;
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Light, 0);
 				actualTimeL = 0.0f;
@@ -118,6 +140,13 @@ public class GrabManager : MonoBehaviour {
 
 			if (right.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) {
 				rightGripping = true;
+				if (firstAnimationRightTime) {
+					firstAnimationRightTime = false;
+					rightHandOpened.SetActive (false);
+					//leftHandOpened.SetActive (false);
+					rightHandClosed.SetActive (true);
+					//leftHandClosed.SetActive (false);
+				}
 
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Hard, 1);
@@ -144,6 +173,7 @@ public class GrabManager : MonoBehaviour {
 
 			} else if(!leftGripping && right.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) == 0 && prevRightControllerValue > 0)) {
 				rightGripping = false;
+				firstAnimationRightTime = true;
 
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Light, 1);
