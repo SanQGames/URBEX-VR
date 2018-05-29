@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 10}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 90
+  controlID: 70
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 342}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 11
+  controlID: 105
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,8 +163,8 @@ MonoBehaviour:
     y: 0
     width: 324
     height: 450
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_MinSize: {x: 772, y: 492}
   m_MaxSize: {x: 22012, y: 14042}
   vertical: 0
-  controlID: 120
+  controlID: 132
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -546,19 +546,18 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets/Scenes/Levels
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Documentos\GitHub\URBEX\URBEX-VR\URBEX VR
+  m_LastProjectPath: C:\Users\Davidro\Documents\GitHub\URBEX-VR\URBEX VR
   m_IsLocked: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 439}
     m_SelectedIDs: 36320000
     m_LastClickedID: 12854
-    m_ExpandedIDs: 000000001e440000284400002a4400002a450000ec4a0000404b0000d84b0000384c0000ca4c0000ce4c0000285000002e500000a8530000f25300009c610000a4620000c462000084640000b8640000ce6400001e6500003665000070670000cc6700002e6900008a690000f8690000b26d0000b46d0000b66d0000b86d0000
+    m_ExpandedIDs: 00000000803e00008a3e00008c3e0000b241000050450000a44500009c4600002e470000324700008c4a0000924a0000564e0000045c00000c5d00002c5d0000205f0000365f0000845f00009c5f00003c620000a2630000fe6300006c640000787200007a7200007c7200007e720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -586,7 +585,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e440000284400002a440000ec4a0000404b0000384c0000ca4c0000ce4c0000285000002e500000f25300009c610000a4620000c4620000b8640000ce6400001e65000036650000cc6700002e6900008a690000f8690000b26d0000b46d0000b66d0000b86d0000b66e0000
+    m_ExpandedIDs: 00000000803e00008a3e00008c3e0000504500009c4600002e470000324700008c4a0000924a0000564e00001c5300000c5d00002c5d0000205f0000365f0000845f00009c5f00003c620000a2630000fe6300006c640000787200007a7200007c7200007e7200008a72000000800000068000004a800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -703,10 +702,10 @@ MonoBehaviour:
     height: 429
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 480}
-    m_SelectedIDs: 8edeedff
-    m_LastClickedID: -1188210
-    m_ExpandedIDs: 90deedff92deedff98deedffa0deedffa2deedffa6deedffa8deedff06e6edfffc6beefffe6beeff046ceeff0c6ceeff0e6ceeff126ceeff146ceefff47deeff86c9eeff88c9eeff8ec9eeff96c9eeff98c9eeff9cc9eeff9ec9eeffb0d0eeff7cddeeff8cddeeff8eddeeff92ddeeff94ddeeff9addeeff1618efff1818efff1e18efff2618efff2818efff2c18efff2e18efff401fefffec65efffee65effff465effffc65effffe65efff0266efff0466efff0a66efff3233f8ff3433f8ff4033f8ff4c33f8ff5233f8ff3c62faff4462faff4662faff4a62faff5262faff5a62faff76dbffff78dbffff7edbffff86dbffff88dbffff8cdbffff8edbffff2adcffff000000006c9a0000489d0000229e00002aa0000092a30000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 623fffffbe59ffff409afffff6daffff0000000004740000c47e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +724,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
   m_ExpandedScenes:
-  - Level1
+  - Tutorial
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -762,9 +761,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.547701, y: 20.534452, z: -4.589999}
+    m_Target: {x: 3.7082596, y: 3.250155, z: -33.462013}
     speed: 2
-    m_Value: {x: 12.547701, y: 20.534452, z: -4.589999}
+    m_Value: {x: 3.7082596, y: 3.250155, z: -33.462013}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -788,13 +787,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.16645867, y: -0.7382527, z: 0.19718623, w: 0.6232111}
+    m_Target: {x: -0.08488274, y: -0.9007899, z: 0.20475425, w: -0.3734275}
     speed: 2
-    m_Value: {x: 0.16645867, y: -0.7382527, z: 0.19718623, w: 0.6232111}
+    m_Value: {x: -0.08488275, y: -0.90079, z: 0.20475426, w: -0.37342754}
   m_Size:
-    m_Target: 3.1486926
+    m_Target: 11.96001
     speed: 2
-    m_Value: 3.1486926
+    m_Value: 11.96001
   m_Ortho:
     m_Target: 0
     speed: 2
