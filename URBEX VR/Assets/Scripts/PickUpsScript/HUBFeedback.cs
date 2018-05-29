@@ -10,6 +10,7 @@ public class HUBFeedback : MonoBehaviour {
 
 	public GameObject buildingL2;
 	public GameObject[] level2Cols;
+
 	void Start () {
 
 		int l1 = PlayerPrefs.GetInt ("l1");
@@ -63,6 +64,17 @@ public class HUBFeedback : MonoBehaviour {
 
 		buildingL1.GetComponent<Renderer> ().material = materials [l1];
 		buildingL2.GetComponent<Renderer> ().material = materials [l2];
+
+		if (l1 == 0) {
+			buildingL1.GetComponent<Outline> ().OutlineMode = Outline.Mode.OutlineHidden;
+			buildingL2.GetComponent<FadeWhenPicked> ().CantGrab ();
+		} 
+		
+		if (l2 == 0) {
+			buildingL2.GetComponent<Outline> ().OutlineMode = Outline.Mode.OutlineHidden;
+			buildingL2.GetComponent<FadeWhenPicked> ().CantGrab ();
+		} 
+
 	}
 	
 	// Update is called once per frame

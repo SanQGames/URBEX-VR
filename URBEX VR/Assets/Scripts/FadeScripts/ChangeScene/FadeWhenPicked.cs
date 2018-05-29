@@ -11,8 +11,10 @@ public class FadeWhenPicked : MonoBehaviour {
 	bool once;
 	public FinishedLevelManager finManager;
 	public bool levelFinished;
+	public bool grabable;
 	void Start () {
 		once = true;
+		grabable = true;
 	}
 	
 	// Update is called once per frame
@@ -29,5 +31,8 @@ public class FadeWhenPicked : MonoBehaviour {
 			if (levelFinished) finManager.GetComponent<FinishedLevelManager> ().SetPrefabs ();
 		}
 			
+	}
+	public void CantGrab(){
+		grabable = false;
 	}
 }
