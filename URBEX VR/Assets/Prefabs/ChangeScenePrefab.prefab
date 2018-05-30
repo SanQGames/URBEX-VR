@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114045841910784944}
   - component: {fileID: 114547411131915342}
   - component: {fileID: 114220544051565310}
+  - component: {fileID: 114394041635897198}
   m_Layer: 0
   m_Name: ChangeScenePrefab
   m_TagString: Untagged
@@ -114,6 +115,7 @@ MonoBehaviour:
   rController: 2
   finManager: {fileID: 114220544051565310}
   levelFinished: 1
+  grabable: 0
 --- !u!114 &114220544051565310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,6 +129,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level: 2
   timeToBeat: 150
+--- !u!114 &114394041635897198
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701348279188064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!114 &114547411131915342
 MonoBehaviour:
   m_ObjectHideFlags: 1
