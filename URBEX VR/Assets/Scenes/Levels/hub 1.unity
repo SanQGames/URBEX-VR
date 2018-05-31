@@ -4069,7 +4069,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh108654
+  m_Name: pb_Mesh49050
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -4883,7 +4883,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh108568
+  m_Name: pb_Mesh48960
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -6602,7 +6602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2188ab32d938146b383441777a8921, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exitAudio: {fileID: 0}
+  exitAudio: {fileID: 2143977743}
   lController: 1
   rController: 2
 --- !u!82 &2143977743
@@ -6615,7 +6615,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6f42fb23f7e7ded4693b3a8c94dcdb7c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0

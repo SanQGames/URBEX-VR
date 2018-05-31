@@ -15,13 +15,25 @@ public class FadeWhenPicked : MonoBehaviour {
 	public FinishedLevelManager finManager;
 	public bool levelFinished;
 	public bool grabable;
+
+	public bool useTriggerOnly = false;
+
 	void Start () {
 		once = true;
 		grabable = true;
 	}
 
+	//END LEVEL WITH TRIGGER ONLY
+	void OnTriggerEnter(Collider col) {
+		if (useTriggerOnly && once) {
+			once = false;
+			FadeManager.StartFadeOut ();
+			if (levelFinished) finManager.GetComponent<FinishedLevelManager> ().SetPrefabs ();
+		}
+	}
+
 	void OnTriggerStay(Collider col) {
-		if (col.gameObject.layer.Equals (10)) {
+		if (col.gameObject.layer.Equals (10) && !useTriggerOnly) {
 
 			if ( (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0 || OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) && once ) {
 				once = false;

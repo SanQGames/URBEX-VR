@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114547411131915342}
   - component: {fileID: 114220544051565310}
   - component: {fileID: 114394041635897198}
+  - component: {fileID: 65437579081199380}
   m_Layer: 0
   m_Name: ChangeScenePrefab
   m_TagString: Untagged
@@ -40,8 +41,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1701348279188064}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 47.947, y: 55.461, z: 20.362}
-  m_LocalScale: {x: 0.2530643, y: 0.24629532, z: 0.2703273}
+  m_LocalPosition: {x: 0, y: 0.8639984, z: 0}
+  m_LocalScale: {x: 0.25306466, y: 0.24629532, z: 0.27032766}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,6 +100,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65437579081199380
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1701348279188064}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.646734, y: 5.0169535, z: 5.591094}
+  m_Center: {x: 0.037235614, y: -0.18467408, z: -0.038961865}
 --- !u!114 &114045841910784944
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -110,12 +123,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ddae97d909de90468fc40d2db1be34a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioReady: {fileID: 0}
   FadeManager: {fileID: 114547411131915342}
   lController: 1
   rController: 2
   finManager: {fileID: 114220544051565310}
   levelFinished: 1
   grabable: 0
+  useTriggerOnly: 0
 --- !u!114 &114220544051565310
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdeb2f335880c494088dadab76d00790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: 2
+  level: 1
   timeToBeat: 150
 --- !u!114 &114394041635897198
 MonoBehaviour:
