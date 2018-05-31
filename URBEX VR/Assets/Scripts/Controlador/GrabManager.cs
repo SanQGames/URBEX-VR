@@ -38,6 +38,10 @@ public class GrabManager : MonoBehaviour {
 	private bool firstAnimationLeftTime = true;
 	private bool firstAnimationRightTime = true;
 
+	[Header("GRAB SOUND")]
+	public AudioClip[] grabs;
+	public AudioSource grabAudio;
+
 	[Header("VIBRATION")]
 	public OculusHaptics leftVibration;
 	public OculusHaptics rightVibration;
@@ -91,6 +95,8 @@ public class GrabManager : MonoBehaviour {
 		if (isGripped) {
 			if (left.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0) {
 				leftGripping = true;
+				grabAudio.clip = SelectClip ();
+				grabAudio.Play ();
 
 				if (firstAnimationLeftTime) {
 					firstAnimationLeftTime = false;
@@ -140,6 +146,9 @@ public class GrabManager : MonoBehaviour {
 
 			if (right.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) {
 				rightGripping = true;
+				grabAudio.clip = SelectClip ();
+				grabAudio.Play ();
+
 				if (firstAnimationRightTime) {
 					firstAnimationRightTime = false;
 					rightHandOpened.SetActive (false);
@@ -214,5 +223,10 @@ public class GrabManager : MonoBehaviour {
 
 		left.prevPos = leftControllerObj.position;
 		right.prevPos = rightControllerObj.position;
+	}
+
+	AudioClip SelectClip() {
+		int randomValue = Random.Range (0, 5);
+		return grabs [randomValue];
 	}
 }

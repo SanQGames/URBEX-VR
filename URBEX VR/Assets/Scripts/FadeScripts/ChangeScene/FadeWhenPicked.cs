@@ -5,6 +5,9 @@ using UnityEngine;
 public class FadeWhenPicked : MonoBehaviour {
 
 	// Use this for initialization
+	[Header("ReadySound")]
+	public AudioSource audioReady;
+
 	public FadeScript FadeManager;
 	public OVRInput.Controller lController;
 	public OVRInput.Controller rController;
@@ -16,16 +19,13 @@ public class FadeWhenPicked : MonoBehaviour {
 		once = true;
 		grabable = true;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 	void OnTriggerStay(Collider col) {
 		if (col.gameObject.layer.Equals (10)) {
 
 			if ( (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0 || OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) && once ) {
 				once = false;
+				audioReady.Play ();
 				FadeManager.StartFadeOut ();
 			}
 			if (levelFinished) finManager.GetComponent<FinishedLevelManager> ().SetPrefabs ();

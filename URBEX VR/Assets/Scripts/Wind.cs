@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class Wind : MonoBehaviour
 {
+
+	public bool checkForHeight = true;
     public GameObject minHeight;
     public GameObject maxHeight;
     public AudioSource windAudio;
+	public AudioSource cityAudio;
     public float maxAudio;
     public float minAudio;
 
@@ -19,18 +22,28 @@ public class Wind : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        CheckPos();
+		if (checkForHeight) {
+			CheckPos ();
+		} else {
+			windAudio.volume = 0.5f;
+			cityAudio.volume = 0.5f;
+		}
+		
     }
 
     void CheckPos() {
         if (transform.position.y >= maxHeight.transform.position.y) {
-            windAudio.volume = 1;
+            windAudio.volume = 0.8f;
+			cityAudio.volume = 0.2f;
         }
         else if (transform.position.y <= minHeight.transform.position.y) {
-            windAudio.volume = 0;
+            windAudio.volume = 0.2f;
+			cityAudio.volume = 0.8f;
         }
         else if (transform.position.y >= minHeight.transform.position.y && transform.position.y <= maxHeight.transform.position.y) {
-            windAudio.volume = minAudio + (transform.position.y - minHeight.transform.position.y) * (maxAudio - minAudio) / (maxHeight.transform.position.y - minHeight.transform.position.y);
+			float volumeValue = minAudio + (transform.position.y - minHeight.transform.position.y) * (maxAudio - minAudio) / (maxHeight.transform.position.y - minHeight.transform.position.y);
+			windAudio.volume = volumeValue;
+			cityAudio.volume = 1.0f - volumeValue;
         }
     }
 }
