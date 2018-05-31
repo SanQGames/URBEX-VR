@@ -517,7 +517,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1090885082340380, guid: ab72ae52e1a16984e805e985db2450fd, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab72ae52e1a16984e805e985db2450fd, type: 2}
@@ -733,7 +733,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1054122811112634, guid: b767f22cfa16058428ffb01a61990f66, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b767f22cfa16058428ffb01a61990f66, type: 2}
@@ -2372,12 +2372,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4514325665608582, guid: 679de16fd5755a343ae20671af099872,
     type: 2}
   m_PrefabInternal: {fileID: 738933449}
---- !u!114 &751684545 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114547411131915342, guid: c6d8c7e036150c140b6423b1c4e729bb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1427662021}
-  m_Script: {fileID: 11500000, guid: cfe677346f284bb4ba16465d7b60d2ed, type: 3}
 --- !u!1 &768249517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2918,7 +2912,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 878632911}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6139de90b7dc65b4faff394a55a4366d, type: 3}
   m_Name: 
@@ -2963,7 +2957,7 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913201291}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6139de90b7dc65b4faff394a55a4366d, type: 3}
   m_Name: 
@@ -3392,7 +3386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioReady: {fileID: 997215890}
-  FadeManager: {fileID: 751684545}
+  FadeManager: {fileID: 939871647}
   lController: 1
   rController: 2
   finManager: {fileID: 114220544051565310, guid: c6d8c7e036150c140b6423b1c4e729bb,
@@ -4823,7 +4817,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh49050
+  m_Name: pb_Mesh47242
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2

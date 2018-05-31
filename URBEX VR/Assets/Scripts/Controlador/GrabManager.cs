@@ -95,15 +95,15 @@ public class GrabManager : MonoBehaviour {
 		if (isGripped) {
 			if (left.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0) {
 				leftGripping = true;
-				grabAudio.clip = SelectClip ();
-				grabAudio.Play ();
+
 
 				if (firstAnimationLeftTime) {
+					grabAudio.clip = SelectClip ();
+					grabAudio.Play ();
 					firstAnimationLeftTime = false;
-					//rightHandOpened.SetActive (true);
+					//firstAnimationRightTime = true;
 					leftHandOpened.SetActive (false);
-					//rightHandClosed.SetActive (false);
-					leftHandClosed.SetActive (false);
+					leftHandClosed.SetActive (true);
 				}
 
 				actualTimeR = 0.0f;
@@ -130,7 +130,13 @@ public class GrabManager : MonoBehaviour {
 
 			} else if(left.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) == 0 && prevLeftControllerValue > 0) ) {
 				leftGripping = false;
+				//rightHandOpened.SetActive (true);
+				leftHandOpened.SetActive (true);
+				//rightHandClosed.SetActive (false);
+				leftHandClosed.SetActive (false);
+
 				firstAnimationLeftTime = true;
+				firstAnimationRightTime = true;
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Light, 0);
 				actualTimeL = 0.0f;
@@ -146,10 +152,12 @@ public class GrabManager : MonoBehaviour {
 
 			if (right.canGrip && OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) {
 				rightGripping = true;
-				grabAudio.clip = SelectClip ();
-				grabAudio.Play ();
+				//firstAnimationLeftTime = true;
+
 
 				if (firstAnimationRightTime) {
+					grabAudio.clip = SelectClip ();
+					grabAudio.Play ();
 					firstAnimationRightTime = false;
 					rightHandOpened.SetActive (false);
 					//leftHandOpened.SetActive (false);
@@ -183,6 +191,11 @@ public class GrabManager : MonoBehaviour {
 			} else if(!leftGripping && right.canGrip && (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) == 0 && prevRightControllerValue > 0)) {
 				rightGripping = false;
 				firstAnimationRightTime = true;
+				//rightHandOpened.SetActive (true);
+				rightHandOpened.SetActive (true);
+				//rightHandClosed.SetActive (false);
+				rightHandClosed.SetActive (false);
+				firstAnimationRightTime = true;
 
 				//VIBRATION:
 				//haptics.Vibrate(VibrationForce.Light, 1);
@@ -196,12 +209,25 @@ public class GrabManager : MonoBehaviour {
 				//body.transform.position += (right.prevPos - OVRInput.GetLocalControllerPosition (rController));
 				//body.velocity = (right.prevPos - rightControllerObj.position) / Time.deltaTime;
 				body.AddForce( ((right.prevPos - rightControllerObj.position) / Time.deltaTime), ForceMode.VelocityChange );
+			} else if(OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) == 0) {
+				firstAnimationRightTime = true;
+				//rightHandOpened.SetActive (true);
+				rightHandOpened.SetActive (true);
+				//rightHandClosed.SetActive (false);
+				rightHandClosed.SetActive (false);
+
 			}
 
 		} else {
 			//body.useGravity = true;
 			charController.enabled = false;
 			body.isKinematic = false;
+			firstAnimationRightTime = true;
+			firstAnimationLeftTime = true;
+			rightHandOpened.SetActive (true);
+			rightHandOpened.SetActive (true);
+			rightHandClosed.SetActive (false);
+			rightHandClosed.SetActive (false);
 			//charController.attachedRigidbody.isKinematic = false;
 		}		
 
