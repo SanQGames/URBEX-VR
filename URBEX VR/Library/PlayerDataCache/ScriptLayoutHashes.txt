@@ -1,12 +1,15 @@
 WindowsStandalone
 SceneListBegin?
 Assets/Scenes/duplicates/Logo.unity
-Assets/Scenes/duplicates/hub 1.unity
+Assets/Scenes/Levels/hub 1.unity
 Assets/Scenes/Levels/Level1.unity
-Assets/Scenes/Levels/Level2.unity
+Assets/Scenes/Levels/Level2_night.unity
+Assets/Scenes/Levels/Tutorial.unity
 SceneListEnd?
 a935519ff56e5eee54d08ee4da0929a0 Assembly-CSharp.dll:.OVRMixedRealityCaptureSettings
 7df47d262399a6f845c2ed06b92cba9b Assembly-CSharp.dll:.OVRCameraRig
+1e0b5326e036a452a81bafe764def850 Assembly-CSharp.dll:.OculusHaptics
+b3dfb08392796946d3cd9a6a4225cde8 Assembly-CSharp.dll:.Steps
 bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer
 5979728add95abdc642051d92f726e95 Assembly-CSharp.dll:.OVRDebugHeadController
 09da61ba0ef26d77645f23cec252b635 Assembly-CSharp.dll:.OVRManager
@@ -21,12 +24,12 @@ bfddcc339fade781f72a7bb9403d51f3 Assembly-CSharp.dll:.OVRGazePointer
 0f283eb37fae76d13671bcaa3e3626d3 Assembly-CSharp.dll:.FinishedLevelManager
 62b4e7a71fd77f1f2786f9f216f8d28a Assembly-CSharp.dll:.FadeWhenPickedTp
 d8062fe8c9eac79f41b65fb657072fd0 Assembly-CSharp.dll:.Grab
-b23fee4de4dfa4b5dc9ee68821457421 Assembly-CSharp.dll:.GrabManager
+f77ceaeef8b565ef1729256a53c05802 Assembly-CSharp.dll:.GrabManager
 98aac34b7cb5b66f2377edd706e71b79 Assembly-CSharp.dll:.Pull
 6f2f0979accbc3efafde0c413424f808 Assembly-CSharp.dll:.OVRTrackedRemote
 75afd4f55d5de156385b561957b508d8 Assembly-CSharp.dll:.OVRMousePointer
 08bb67c27645cb6fc5a4fa6a4a87b9d4 Assembly-CSharp.dll:.FadeScript
-4918c1aa1b3be1a03ee5388e6db3c20d Assembly-CSharp.dll:.PickCollectable
+e1988ec6f8262ce01367fbdfdf3743c5 Assembly-CSharp.dll:.PickCollectable
 dff84b23c2a735d627bb6091fa5e0367 Assembly-CSharp.dll:.TutorialControls
 77d910c9b3b474f529f112a6608574cc Assembly-CSharp.dll:.CharacterControls
 322cb40e1e282f28af980cbef7922a90 UnityEngine.Analytics.dll:UnityEngine.Analytics.AnalyticsEventTracker
@@ -39,10 +42,11 @@ a97206b1f732dc0aa9b23a14352f4399 Assembly-CSharp.dll:.OVRPlatformMenu
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.BoolPrefs
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:ProBuilder2.Examples.HueCube
 9a93f748b7c6fda90f20cf8d995df907 Assembly-CSharp.dll:.OVRResetOrientation
+03284d30f0d8540e8a38a36ded2841c8 Assembly-CSharp.dll:.Spinner
 9a60eb1ce9987b455f2c31e8cf6c22c1 Assembly-CSharp.dll:.OVRScreenFade
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-36e565359303a885cd881a1d25706968 Assembly-CSharp.dll:.Wind
+d8f8189d42f7ae2383509e0a430df19e Assembly-CSharp.dll:.Wind
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRMonoscopic
 74a6fefe8bd94289ab461e70916d7ac3 Assembly-CSharp.dll:.OVRGrabbable
 1e042027c649b7b536a46a4e0335362a Assembly-CSharp.dll:.OVRCubemapCapture
@@ -64,14 +68,15 @@ b6994eef3ccb7ef36dbcb0ded4de4503 ProBuilderCore-Unity5.dll:ProBuilder2.Common.pb
 ccd25ccca39fd5159c3471f7762e1ced Assembly-CSharp.dll:.OVRChromaticAberration
 3390da0fa445ab5d676b24efb56cf5c0 Assembly-CSharp.dll:.OVRSceneSampleController
 82c6192ece8decc1abce9eae5bc44e95 Assembly-CSharp.dll:.HighlightNearestFace
-ebf5829a46fbaef042c54dec2e5cfd65 Assembly-CSharp.dll:.ExitDoor
+68a069faf73dd71c067f4814f61f9ce7 Assembly-CSharp.dll:.ExitDoor
+83e56f00e0d1ca4962d9b27779bae183 Assembly-CSharp.dll:.Outline
 1a5e432b09bf154dd33c7153b667a205 Assembly-CSharp.dll:UnityEngine.EventSystems.OVRPhysicsRaycaster
 420d73cb5979b4d126f3c0d301bcca59 Assembly-CSharp.dll:ProBuilder2.Examples.CameraControls
 7e926316ce20e4d45cb9a9aebc6e79e9 Assembly-CSharp.dll:.OVRGridCube
 a8ed45ab553b07236625df6cc6ac449c Assembly-CSharp.dll:.OVRLint
 715ee802f49103c54cba7971ac57cac0 Assembly-CSharp.dll:UnityEngine.EventSystems.OVRInputModule
 584795015275d7765225ad872c0e8bd8 Assembly-CSharp.dll:.OVRGrabber
-24ebcb863aa63252fe4ae648430a7a3b Assembly-CSharp.dll:.FadeWhenPicked
+559f390ca28406f9a1334d7c7e3f3673 Assembly-CSharp.dll:.FadeWhenPicked
 32dcc1dca94294515dfea07e896e1a84 Assembly-CSharp.dll:ProBuilder2.Examples.RuntimeEdit
 2be6a9092d6ec6c118a8dd27eb3ae1db Assembly-CSharp.dll:.PickUpManager
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
@@ -347,4 +352,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
-1e0b5326e036a452a81bafe764def850 Assembly-CSharp.dll:.OculusHaptics
+205965134a5874db410d674ebdf33ba7 Assembly-CSharp.dll:.ExampleWheelController
+f671a42aea5f34fec6a4450a3668c615 Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingProfile
+3ecea0c2e43f5d97a17c441bfcf59a7d Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingBehaviour
