@@ -35,6 +35,7 @@ public class TutorialControls : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.R)) {
+			PlayerPrefs.SetInt ("l0", 0);
 			PlayerPrefs.SetInt ("l1", 1);
 			PlayerPrefs.SetInt ("l2", 0);
 			BoolPrefs.SetBool ("l1c1", false);
@@ -54,14 +55,15 @@ public class TutorialControls : MonoBehaviour {
 			if (col.a < 0) {
 				fadedOut = true;
 				//NOW WE ENABLE THE BASE IMAGE
-				controlsBase.gameObject.SetActive(true);
-				countdown = secondDelay;
+				//controlsBase.gameObject.SetActive(true);
+				//countdown = secondDelay;
 			}
 		}
 
 		//ONCE THE LOGO IS FADED WE DON'T CARE ABOUT IT
 		if(fadedOut) {
-			switch (mode) {
+			SceneManager.LoadScene (HUB);
+			/*switch (mode) {
 			case 0:
 				//GRAB
 				foreach (SpriteRenderer rend in imagesGrab) {
@@ -102,7 +104,7 @@ public class TutorialControls : MonoBehaviour {
 					SceneManager.LoadScene (HUB);
 				}
 				break;
-			}
+			}*/
 		}
 	}
 }

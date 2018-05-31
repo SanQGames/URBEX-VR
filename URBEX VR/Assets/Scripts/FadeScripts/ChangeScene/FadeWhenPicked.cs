@@ -37,7 +37,7 @@ public class FadeWhenPicked : MonoBehaviour {
 
 			if ( (OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, lController) > 0 || OVRInput.Get (OVRInput.Axis1D.PrimaryHandTrigger, rController) > 0) && once ) {
 				once = false;
-				audioReady.Play ();
+				if(!levelFinished) audioReady.Play ();
 				FadeManager.StartFadeOut ();
 			}
 			if (levelFinished) finManager.GetComponent<FinishedLevelManager> ().SetPrefabs ();
