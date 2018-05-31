@@ -62,7 +62,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1335114868676780
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,13 +114,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335114868676780}
-  m_LocalRotation: {x: 0.27059746, y: -0.6532807, z: -0.27059817, w: 0.6532826}
-  m_LocalPosition: {x: -0.152, y: -0.055, z: 1.868}
+  m_LocalRotation: {x: -0.00000029057261, y: -0.7071058, z: 0.00000026635823, w: 0.7071079}
+  m_LocalPosition: {x: -0.138, y: -0.032, z: 1.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4797816827777840}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: -45.000004}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!4 &4750691549487752
 Transform:
   m_ObjectHideFlags: 1
@@ -140,9 +140,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469353326313366}
-  m_LocalRotation: {x: -0.009652351, y: -0.37891716, z: 0.0067638615, w: -0.9253556}
-  m_LocalPosition: {x: 41.63, y: 29.757, z: -1.257}
-  m_LocalScale: {x: 0.5534316, y: 0.5534316, z: 0.5534316}
+  m_LocalRotation: {x: 0.0065496163, y: 0.0039972756, z: 0.0073193293, w: -0.9999438}
+  m_LocalPosition: {x: 26.985088, y: 1.5254707, z: -23.385803}
+  m_LocalScale: {x: 0.55343217, y: 0.55343145, z: 0.55343205}
   m_Children:
   - {fileID: 4996800831694950}
   - {fileID: 4750691549487752}
@@ -150,7 +150,7 @@ Transform:
   - {fileID: 4322300720984004}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 1.317, y: -315.467, z: -0.298}
+  m_LocalEulerAnglesHint: {x: -0.754, y: -180.47899, z: -0.836}
 --- !u!4 &4996800831694950
 Transform:
   m_ObjectHideFlags: 1
@@ -320,7 +320,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -351,12 +351,12 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: eb7f2fdf6cf18496a8300de97efb5eac, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570

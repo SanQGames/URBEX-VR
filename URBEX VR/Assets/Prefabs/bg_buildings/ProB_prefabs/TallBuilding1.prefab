@@ -29,7 +29,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!1 &1191664271543752
 GameObject:
@@ -49,7 +49,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1863725490092946
 GameObject:
@@ -64,7 +64,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &4267432537789972
 Transform:
@@ -85,15 +85,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1863725490092946}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.43003, y: 60.49542, z: -29.150194}
+  m_LocalRotation: {x: -0, y: 0.7070357, z: -0, w: 0.70717794}
+  m_LocalPosition: {x: 0.1, y: -1.8565826, z: 151.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4267432537789972}
   - {fileID: 4335499152586996}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 89.98801, z: 0}
 --- !u!4 &4335499152586996
 Transform:
   m_ObjectHideFlags: 1
@@ -122,6 +122,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+  - {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -174,7 +175,7 @@ MeshRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15201, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3179,7 +3180,7 @@ MonoBehaviour:
       localPivot: {x: -17.500076, y: 6.0005207}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -3440,7 +3441,7 @@ MonoBehaviour:
       localPivot: {x: -11.500177, y: 11.000521}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -3730,7 +3731,7 @@ MonoBehaviour:
       localPivot: {x: -11.500277, y: 16.00052}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -4049,7 +4050,7 @@ MonoBehaviour:
       localPivot: {x: -17.500378, y: 21.00052}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -4600,7 +4601,7 @@ MonoBehaviour:
       localPivot: {x: -11.500577, y: 31.000523}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -4629,7 +4630,7 @@ MonoBehaviour:
       localPivot: {x: -17.500576, y: 31.000523}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -5151,7 +5152,7 @@ MonoBehaviour:
       localPivot: {x: -5.5007763, y: 41.000523}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -5470,7 +5471,7 @@ MonoBehaviour:
       localPivot: {x: -11.500877, y: 46.000523}
       localSize: {x: 0, y: 0}
       anchor: 9
-    _mat: {fileID: 2100000, guid: 5a0f4148eda480b4b94781ba57dfccfa, type: 2}
+    _mat: {fileID: 2100000, guid: bce6fa65a88329941aaad649eb908395, type: 2}
     manualUV: 0
     elementGroup: -1
     textureGroup: -1
@@ -7149,6 +7150,22 @@ MonoBehaviour:
     areaError: 15
   asset_guid: 
   dontDestroyMeshOnDelete: 0
-  m_selectedFaces: 
-  m_SelectedEdges: []
-  m_selectedTriangles: 
+  m_selectedFaces: 250000001b000000
+  m_SelectedEdges:
+  - x: 149
+    y: 148
+  - x: 148
+    y: 150
+  - x: 150
+    y: 151
+  - x: 151
+    y: 149
+  - x: 109
+    y: 108
+  - x: 108
+    y: 110
+  - x: 110
+    y: 111
+  - x: 111
+    y: 109
+  m_selectedTriangles: 9600000095000000940000009600000097000000950000006e0000006d0000006c0000006e0000006f0000006d000000

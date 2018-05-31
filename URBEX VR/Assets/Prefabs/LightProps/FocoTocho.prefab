@@ -26,7 +26,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1596013554392964
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,15 +81,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1784452497785894}
-  m_LocalRotation: {x: -0.7071068, y: -0.000000009963782, z: -0.000000004702955, w: 0.7071068}
-  m_LocalPosition: {x: 51.111, y: 33.966, z: 34.528}
-  m_LocalScale: {x: 0.3569555, y: 0.35695553, z: 0.35695556}
+  m_LocalRotation: {x: -0.77787495, y: 0.08090341, z: 0.10237576, w: 0.614723}
+  m_LocalPosition: {x: 18.521214, y: 8.021099, z: -59.357315}
+  m_LocalScale: {x: 0.3569555, y: 0.35695553, z: 0.3569555}
   m_Children:
   - {fileID: 4668230455181936}
   - {fileID: 4020992324499300}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -103.364, y: 14.994995, z: 0}
 --- !u!4 &4668230455181936
 Transform:
   m_ObjectHideFlags: 1
@@ -199,12 +199,12 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: fd7cb871930ba40b398d61cf4a3cd04d, type: 2}
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
@@ -240,7 +240,7 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
